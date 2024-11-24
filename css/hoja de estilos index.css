@@ -194,4 +194,23 @@ iframe:active {
             text-decoration: underline; 
             color: #ff6347; 
         }
+h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;  /* Tipografía moderna y profesional */
+    font-size: 2.5rem;  /* Tamaño de fuente grande para encabezados principales */
+    font-weight: bold;  /* Negrita para dar importancia */
+    color: #333333;  /* Color oscuro y suave para mejor legibilidad */
+    margin-bottom: 1.5rem;  /* Espacio por debajo del título */
+    line-height: 1.3;  /* Altura de línea para mejorar la legibilidad */
+    letter-spacing: -0.5px;  /* Espaciado de letras sutil para darle un toque elegante */
+}
 
+/* Estilos para h2 */
+h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2rem;  /* Un poco más pequeño que h1, pero sigue destacando */
+    font-weight: 600;  /* Peso de fuente seminegrita */
+    color: #444444;  /* Un tono de gris más claro que el h1 para diferenciarlo */
+    margin-bottom: 1.2rem;  /* Espacio por debajo para separar del contenido */
+    line-height: 1.4;  /* Altura de línea para mejorar la legibilidad */
+    letter-spacing: -0.3px;
+}
