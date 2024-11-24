@@ -28,7 +28,48 @@
             color: #ff6347; 
         }
     </style>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen Bonita</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Fondo claro */
+      font-family: Arial, sans-serif; /* Tipo de letra */
+      display: flex;
+      justify-content: center; /* Centrar la imagen */
+      align-items: center; /* Centrar la imagen verticalmente */
+      height: 100vh; /* Hacer que ocupe toda la altura de la pantalla */
+      margin: 0;
+    }
 
+    .imagen-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px; /* Bordes redondeados */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+      transition: transform 0.3s ease; /* Transición suave en el hover */
+    }
+
+    .imagen-container:hover {
+      transform: scale(1.05); /* Efecto de agrandar en hover */
+    }
+
+    img {
+      width: 100%; /* Que la imagen ocupe todo el contenedor */
+      height: auto; /* Mantener la proporción */
+      object-fit: cover; /* Cubrir todo el área del contenedor sin deformarse */
+    }
+
+    .titulo {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    }
+  </style>
 </head>
 <body>
      <nav>
@@ -36,10 +77,7 @@
     <a href="pagina 1.html">Página 1</a>
    <!-- Falta que nos manden los profesores sus SharePoints, hemos puesto unos de prueba, los cuales están vacíos -->
 
-</nav>
-<div class="container">
-    <img src="https://www.votatuprofesor.com/images/logo-centros/ies-cardenal-lopez-de-mendoza-logo.webp" alt="Imagen Transparente" class="imagen-transparente">
-  </div>     
+</nav>     
     <ul>
         <li><a href="https://educajcyl.sharepoint.com/:u:/r/sites/MATEMTICASRADIODEMATEMTICAS/SitePages/TopicHome.aspx?csf=1&web=1&share=EV8BUCZI-tRIjg1rN-jiKSMBvmhWALOTZakaoRSBCtTtXQ&e=AQezr4">MATEMATICAS<a/></ul>
         <li> <a href="https://educajcyl.sharepoint.com/sites/Lengua29/SitePages/TopicHome.aspx?csf=1&web=1&share=EQQcxRSI4kNMh4pb-ZmjDvQBdkI0RyrNGvvzS5skq32tnA&e=K5jyRT&CID=d21fda71-9e05-4bde-9d23-4b97a5d3aee0">LENGUA<a/></ul>
@@ -47,7 +85,10 @@
         <li> <a href="https://educajcyl.sharepoint.com/sites/TICIIMENDOZA23-24/SitePages/Radio-Mendoza.aspx?csf=1&web=1&share=EcjLjRjHjVxOtfJ7Zc7vtF4BdJqF5IdU20gvYr9KMyIEYA&e=pw38h1&CT=1732270183048&OR=OWA-NT-Mail&CID=c38eb1c6-8408-9385-324d-dad7cd32d194">TIC<a/></ul>
         
     </ul>
-  
+    <div class="imagen-container">
+    <img src="https://via.placeholder.com/600x400" alt="Imagen Bonita">
+    <div class="titulo">¡Mira esta imagen!</div>
+  </div>
  
 </body>
 
