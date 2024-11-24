@@ -55,6 +55,48 @@
             color: #f0e68c;
         }
     </style>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen Bonita</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .imagen-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .imagen-container:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .titulo {
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+  </style>
 </head>
 <body>
 
@@ -79,6 +121,9 @@
         </section>
  <div class="container">
     <img src="https://www.votatuprofesor.com/images/logo-centros/ies-cardenal-lopez-de-mendoza-logo.webp" alt="Imagen Transparente" class="imagen-transparente">
+     <div class="imagen-container">
+    <img src="https://via.placeholder.com/600x400" alt="Imagen Bonita">
+    <div class="titulo">Imagen de nuestro instituto</div>
   </div>
         <section>
             <h2>Servicios</h2>
