@@ -71,33 +71,39 @@
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
     }
   </style>
-      <meta charset="UTF-8">
+    <style>
+          <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Horizontal</title>
-    <style>
-        
+        /* Elimina los estilos por defecto de la lista */
         ul {
-            list-style-type: none; 
+            list-style-type: none; /* Eliminar los puntos de la lista */
             padding: 0;
             margin: 0;
-            display: flex; 
+            display: flex; /* Usar flexbox para organizar los elementos horizontalmente */
+            justify-content: space-evenly; /* Asegura que haya espacio entre los elementos */
+            width: 100%; /* Hace que la lista ocupe todo el ancho disponible */
         }
 
-        
+        /* Estilo de los elementos de la lista */
         li {
-            margin-right: 20px; 
+            flex: 1; /* Hace que los elementos de la lista se distribuyan igualmente */
+            text-align: center; /* Centra los textos de los enlaces */
         }
 
-     
+        /* Estilo para los enlaces */
         a {
-            text-decoration: none; 
-            color: #333; 
-            font-size: 18px; 
-            font-weight: bold; 
+            text-decoration: none; /* Eliminar el subrayado del enlace */
+            color: #333; /* Color del texto del enlace */
+            font-size: 18px; /* Tamaño de fuente */
+            font-weight: bold; /* Negrita */
+            display: block; /* Hace que el enlace sea un bloque para ocupar toda el área del <li> */
+            padding: 10px;
         }
 
+        /* Efecto al pasar el ratón */
         a:hover {
-            color: #007BFF; 
+            color: #007BFF; /* Cambiar el color del texto al pasar el ratón */
         }
     </style>
 </head>
